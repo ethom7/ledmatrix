@@ -21,7 +21,8 @@ Parts used and adapted from [Sunfounder Super Kit V2.0 for Ardunio](https://www.
   
 ## Resources
   - [Diagrams and other materials, Spreadsheet](https://github.com/ethom7/ledmatrix/blob/master/resources/MatrixSheet.xlsm)
-  
+
+![MATRIX DIAGRAM](https://raw.githubusercontent.com/ethom7/ledmatrix/master/resources/matrixpinnumbering.jpg)
 ![ALL WIRED](https://raw.githubusercontent.com/ethom7/ledmatrix/master/resources/20170104_134126.jpg)
 ![LED WIRED2](https://raw.githubusercontent.com/ethom7/ledmatrix/master/resources/20170104_134039.jpg)
 ![LED WIRED](https://raw.githubusercontent.com/ethom7/ledmatrix/master/resources/20170104_134025.jpg)
