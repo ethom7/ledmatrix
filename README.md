@@ -1,4 +1,5 @@
 # LED Matrix Project
+[8x8 LED Matrix Controlled by a Raspberry Pi - Demo](https://youtu.be/6aoJF9tQhHM)
 
 This is a project adapting an 8x8 LED Matrix to be used with a Raspberry Pi 3. 
 Python control of an 8x8 led matrix with a Raspberry Pi using output from GPIO with WiringPi.
