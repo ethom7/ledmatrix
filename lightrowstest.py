@@ -62,58 +62,28 @@ import wiringpi as wpi
 
 
 # pin to wiringPi
-ROW1 = 8
-ROW2 = 13
-ROW3 = 7
-ROW4 = 11
-ROW5 = 0
-ROW6 = 6
-ROW7 = 1
-ROW8 = 4
-COL1 = 21
-COL2 = 2
-COL3 = 3
-COL4 = 9
-COL5 = 5
-COL6 = 10
-COL7 = 14
-COL8 = 15
+rows = [8, 13, 7, 11, 0, 6, 1, 4]
+columns = [21, 2, 3, 9, 5, 10, 14, 15]
 
-HIGH = 1
-LOW = 0
+high = 1
+low = 0
 
 
 
 ''' function to set all pins off in the matrix '''
 def alloff():
-
-        for pin in range(16):
-                wpi.digitalWrite(pin, 0)  # turn all pins off
+    for pin in range(16):
+        wpi.digitalWrite(pin, 0)  # turn all pins off
 
 ''' function to set all row control pins on in the matrix '''
 def allrowson():
-
-        wpi.digitalWrite(0,1)
-        wpi.digitalWrite(1,1)
-        wpi.digitalWrite(4,1)
-        wpi.digitalWrite(6,1)
-        wpi.digitalWrite(7,1)
-        wpi.digitalWrite(8,1)
-        wpi.digitalWrite(11,1)
-        wpi.digitalWrite(13,1)
-
+    for row in rows:
+        wpi.digitalWrite(row, 1)
 
 ''' function to set all column control pins on in the matrix, turns off corresponding leds '''
 def allcolson():
-
-        wpi.digitalWrite(2,1)
-        wpi.digitalWrite(3,1)
-        wpi.digitalWrite(5,1)
-        wpi.digitalWrite(9,1)
-        wpi.digitalWrite(10,1)
-        wpi.digitalWrite(21,1)
-        wpi.digitalWrite(14,1)
-        wpi.digitalWrite(15,1)
+    for column in columns:
+        wpi.digitalWrite(column, 1)
 
 def main():
 
@@ -130,22 +100,8 @@ def main():
 
     ## set all pins to output
     ## to reduce possibility of incorrect setup set each pin individually
-    wpi.pinMode(0, 1)
-    wpi.pinMode(1, 1)
-    wpi.pinMode(2, 1)
-    wpi.pinMode(3, 1)
-    wpi.pinMode(4, 1)
-    wpi.pinMode(5, 1)
-    wpi.pinMode(6, 1)
-    wpi.pinMode(7, 1)
-    wpi.pinMode(8, 1)
-    wpi.pinMode(9, 1)
-    wpi.pinMode(10, 1)
-    wpi.pinMode(11, 1)
-    wpi.pinMode(21, 1)
-    wpi.pinMode(13, 1)
-    wpi.pinMode(14, 1)
-    wpi.pinMode(15, 1)
+    for pin in (rows + columns):
+        wpi.pinMode(pin, 1)
 
     ## turn off all pins
     alloff()
