@@ -1,0 +1,30 @@
+Pseudo-code walk thru:
+
+Start with nested columns list:
+
+## number of times to scroll entire text
+while true:
+
+	## display column matrix loop 10 times
+	for column in range(len(outpanel)):
+
+		## 
+		turn on row in range(len(outpanel[column])): 
+			display outpanel[column][row]
+		display outpanel[1]
+		display outpanel[2]
+		display outpanel[3]
+		display outpanel[4]
+		display outpanel[5]
+		display outpanel[6]
+		display outpanel[7]
+
+
+
+
+## keep scrolling until stopped
+while True:
+	# start at beginning of list
+
+	## loop thru full list
+	for columns in outputpanellist:

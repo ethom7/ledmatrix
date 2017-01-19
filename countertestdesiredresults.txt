@@ -1,0 +1,9 @@
+Desired Results
+
+
+1. Scroll thru entire display panel 10 times (line 17) confirm this on (line 48)
+2. Actual count thru outputpanellist list index counter (line 23)
+3. Iterate thru the full outputpanellist (line 21)
+4. Display actual column index and the next number of lookahead columns (line 29)
+5. Light up current column index (line 36)
+6. Light up relevant and applicable rows in current column (line 43)
