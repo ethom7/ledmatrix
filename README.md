@@ -39,3 +39,7 @@ Parts used and adapted from [Sunfounder Super Kit V2.0 for Ardunio](https://www.
   - [Sunfounder Lesson 12 Dot-Matrix LED Display](https://www.sunfounder.com/learn/Super-Kit-V2-0-for-Arduino/lesson-12-dot-matrix-led-display-super-kit.html)
   - [Rasperry Pi Interactive Pin Out](http://pinout.xyz/pinout/wiringpi)
   - [Wiring Pi](http://wiringpi.com/)
+  
+  
+## Updates
+  - Updated functionality to base the display functionality by column to facilitate horizonal scrolling. This kind of works as shown in the newest video but some work and clean up of the code needs to be completed. 
