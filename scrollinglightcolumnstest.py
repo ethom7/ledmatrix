@@ -1,7 +1,12 @@
 """
-	lightrowstest.py
+	scrollinglightcolumnstest.py
 
-	Script is to drive the 16 pin 8x8 led matrix using WiringPi and Python.
+	Script is to drive the 16 pin 8x8 led matrix using WiringPi and Python which will serve as the 
+	software driven led matrix display solution. The function convertstringfordisplay(text) converts a string 
+	of ASCII characters [A-Z], [0-9], and [,.:!] to a list containing column row coordinates. The function 
+	counterfunction(outpanel) is a loop to scroll the displaypanellist returned from convertstringfordisplay(text).
+	The current program needs cleaning and the display needs additional work but does provide some of the 
+	desired functionality.
 	by Evan Thompson
 	January 3, 2017
 	https://github.com/ethom7/ledmatrix
@@ -26,16 +31,16 @@
 
 
 	MATRIX 
-		1	2	3	4	5	6	7	8
+		0 	1	2	3	4	5	6	7
 
-	A	X	X	X	X	X	X	X	X
-	B	X	X	X	X	X	X	X	X
-	C	X	X	X	X	X	X	X	X
-	D	X	X	X	X	X	X	X	X
-	E	X	X	X	X	X	X	X	X
-	F	X	X	X	X	X	X	X	X
-	G	X	X	X	X	X	X	X	X
-	H	X	X	X	X	X	X	X	X
+	0	X	X	X	X	X	X	X	X
+	1	X	X	X	X	X	X	X	X
+	2	X	X	X	X	X	X	X	X
+	3	X	X	X	X	X	X	X	X
+	4	X	X	X	X	X	X	X	X
+	5	X	X	X	X	X	X	X	X
+	6	X	X	X	X	X	X	X	X
+	7	X	X	X	X	X	X	X	X
 	
 
 """
